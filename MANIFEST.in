@@ -1,0 +1,3 @@
+recursive-include django_paster/templates *
+
+include README.rst
