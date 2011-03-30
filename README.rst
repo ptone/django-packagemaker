@@ -61,3 +61,14 @@ with this layout::
     coolapp/README.rst
     coolapp/setup.py
 
+If you just want to then include this in your local development virtualenv, you
+need only::
+
+    $ pip install -e /path/to/coolapp
+
+This will install the app, but allows you to continue to make changes to it in
+its own src location.
+
+If you install the excellent `hub <https://github.com/defunkt/hub>`_ git
+extension, you can then easily ``git create`` from inside your app, and you now
+have a github repo for your project.
