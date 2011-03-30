@@ -1,9 +1,5 @@
 from datetime import date
-import os
-import shutil
-import ConfigParser
-import StringIO
-from subprocess import Popen, call, STDOUT, PIPE
+from subprocess import Popen, PIPE
 
 from paste.util.template import paste_script_template_renderer
 from paste.script.templates import Template, var
