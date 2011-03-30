@@ -14,7 +14,9 @@ Getting started
 
 Install django-packagemaker with pip::
 
-    $ pip install django-packagemaker
+    $ pip install git+git://github.com/ptone/django-packagemaker.git#egg=django_paster
+
+[NOTE: For now, this project itself is not yet on PyPi until more stable]
 
 This will also install the dependencies for using the paster command
 
