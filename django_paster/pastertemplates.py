@@ -15,8 +15,8 @@ class DjangoAppTemplate(Template):
         var('description', 'One-line description of the package'),
         var('long_description', 'Multi-line description (in reST)'),
         var('keywords', 'Space-separated keywords/tags'),
-        var('author', 'Author name', default=sh('git config --get user.name')),
-        var('author_email', 'Author email', default=sh('git config --get user.email')),
+        var('author', 'Author name', default=sh('git config --get user.name').strip()),
+        var('author_email', 'Author email', default=sh('git config --get user.email').strip()),
         var('url', 'URL of homepage'),
         var('license_name', 'License name', default="BSD"),
         var('current_year', 'Copyright year', default=date.today().year)
